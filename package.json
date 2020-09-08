@@ -1,0 +1,11 @@
+{
+  "name": "habit_tracker",
+  "version": "1.0.0",
+  "description": "A web app for tracking habits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chaitanya Adabala",
+  "license": "ISC"
+}
