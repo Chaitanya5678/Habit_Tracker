@@ -1,0 +1,43 @@
+body
+{
+    position: relative;
+    min-height: 100vh;
+}
+
+#home-container
+{
+    display: flex;
+}
+
+#feed
+{
+    width: 80%;
+    padding: 10px;
+}
+
+#user-habits
+{
+    width: 20%;
+    padding: 10px;
+    border-left: 2px solid grey;
+}
+
+.dates
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date
+{
+    margin: 10px;
+}
+
+.form__field {
+
+    border: 0;
+    border-bottom: 2px solid grey;
+    color: black;
+    width: 120px;
+}
+  

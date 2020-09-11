@@ -1,0 +1,36 @@
+
+.header-container{
+    background-color: #3B5998;
+    color: white;
+    display: flex;
+}
+
+.header-logo
+{
+    flex: 4;
+}
+
+
+.header-options
+{
+    flex: 1;
+}
+
+.header-options li{
+    list-style: none;
+    float: right;
+    margin: 10px;
+
+}
+
+.header-options a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

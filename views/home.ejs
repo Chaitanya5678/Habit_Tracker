@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="/css/styles.css">
+
+<div id="home-container">
+
+    <section id="feed">
+
+        <h4>Habit Tracker</h4>
+
+        <% for(habit of habits){ %>
+
+        <div style="text-transform: capitalize;"> <%= habit.name %> </div> <br>
+
+        <div class="dates">
+            <% for(date of dates){ %>
+
+            <div class="date">
+                Dt.<%= date %>
+                <% for(state of habit.states){ %>
+                <% if(state.date == date){ %>
+                <a href="/states/toggle/<%= state.id %> ">
+                    <% if(state.status == 'Done'){ %>
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/463/463574.svg" alt="tick-mark"
+                        height="15px" width="15px">
+                    <% }else{ %>
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/929/929416.svg" alt="cross-mark"
+                        height="15px" width="15px">
+                    <% } %>
+                </a>
+                <% } %>
+
+                <% } %>
+            </div>
+
+            <% } %>
+        </div>
+
+        <br>
+
+        <% } %>
+
+
+
+
+    </section>
+
+    <section id="user-habits">
+
+        <h4>My Habits</h4>
+
+        <% for(habit of habits){ %>
+
+        <div style="text-transform: capitalize;">
+            <%= habit.name %>
+            <a href="/habits/destroy/<%= habit.id %> ">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/929/929416.svg" alt="cross-mark" height="15px"
+                    width="15px">
+            </a>
+        </div> <br>
+
+
+
+        <% } %>
+
+        <form action="/habits/create" id="new-habit-form" method="POST">
+            <input type="text" name="name" placeholder="Habit name" required class="form__field">
+            <input type="image" src="https://www.flaticon.com/svg/static/icons/svg/929/929409.svg" alt="Submit"
+                height="20px" width="20px" >
+        </form>
+
+    </section>
+
+</div>

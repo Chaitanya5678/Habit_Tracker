@@ -1,0 +1,21 @@
+.footer-container
+{
+    color: #3B5998;
+    background-color: lightgray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+}
+
+.footer-para{
+    margin-left: 1%;
+}
+
+
+.footer-container a
+{ 
+    color: #3B5998;
+    text-decoration: none;
+}
